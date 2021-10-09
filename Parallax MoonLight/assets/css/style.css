@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --header-height: 3rem;
+    --first-color-text: white;
+}
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul {
+    list-style:none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+    min-height:100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(#2b1055, #7697de);
+}
+header {
+    position: absolute;
+    top:10px;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    padding:1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo {
+    font-size:32px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item {
+    margin-left:1.5rem;
+}
+.nav__link, .logo {
+    color: var(--first-color-text);
+}
+.nav__link {
+    font-size:18px;
+    padding:10px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nav__link:hover, .active{
+    background-color:var(--first-color-text);
+    color: #2b1055;
+}
+section {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    padding:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before {
+    position: absolute;
+    content:'';
+    bottom:0;
+    height:100px;
+    width: 100%;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index:100;
+}
+section img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    pointer-events: none;
+}
+#moon {
+    left:50%;
+    transform:translateX(-50%);
+    width: 800px;
+    height:800px;
+    object-fit:cover;
+    mix-blend-mode: screen;
+}
+#mountains_front {
+    z-index: 10;
+}
+#text {
+    position: absolute;
+    right: -320px;
+    color: var(--first-color-text);
+    white-space: nowrap;
+    font-size:7.5vw;
+    z-index: 9;
+}
+#btn {
+    padding: 8px 30px;
+    background: var(--first-color-text);
+    color: #2b1055;
+    border-radius:40px;
+    font-size:1.5rem;
+    z-index:9;
+    transform:translateY(100px);
+}
+.sec {
+    z-index: 9;
+    position: relative;
+    padding: 3rem 4rem;
+    background-color: #1c0522;
+}
+.sec h2 {
+    margin: 0 0 1rem 0;
+    font-size:3.2rem;
+    color: var(--first-color-text);
+}
+.sec p {
+    color: var(--first-color-text);
+}

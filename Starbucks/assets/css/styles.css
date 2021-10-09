@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  max-width: 80px;
+}
+
+ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textBox {
+  position: relative;
+  max-width: 610px;
+}
+
+.textBox h2 {
+  color: #333;
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+.textBox h2 span {
+  color: #017143;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.textBox p {
+  color: #333;
+}
+
+.textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background-color: #017143;
+  color: #fff;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.imgBox img {
+  max-width: 340px;
+}
+
+.thumb {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.thumb li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.thumb li:hover {
+  transform: translateY(-10px);
+}
+
+.thumb li img {
+  max-width: 60px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.social li a {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px 0;
+  transform: scale(0.6);
+  filter: invert(1);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #017143;
+  clip-path: circle(600px at right 800px);
+}
+
+.show {
+  right: 0;
+}
+
+@media screen and (min-width: 375px) and (max-width: 560px) {
+  header {
+    padding: 20px;
+    z-index: 10;
+  }
+  header .logo {
+    max-width: 60px;
+  }
+  header ul {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 1rem 1.8rem;
+    box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+  }
+  header ul .close {
+    margin-right: auto;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: flex-end;
+    color: #333;
+  }
+  header ul li {
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  header ul li a {
+    margin-left: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 561px) and (max-width: 767px) {
+  section {
+    padding: 0 0 0 20px;
+    width: 100%;
+    height: 100vh;
+  }
+  header {
+    padding: 20px;
+    z-index: 10;
+  }
+  header .logo {
+    max-width: 60px;
+  }
+  header ul {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 1rem 1.8rem;
+    box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+  }
+  header ul .close {
+    margin-right: auto;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: flex-end;
+    color: #333;
+  }
+  header ul li {
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  header ul li a {
+    margin-left: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  header .toggle {
+    font-size: 2.2rem;
+    color: #333;
+  }
+  header .toggle i {
+    cursor: pointer;
+  }
+  .textBox {
+    margin-top: -12rem;
+  }
+  .textBox h2 {
+    font-size: 2.5rem;
+  }
+  .textBox p {
+    font-size: .8rem;
+  }
+  .imgBox {
+    margin-top: 16rem;
+  }
+  .imgBox img {
+    max-width: 240px;
+  }
+  .circle {
+    clip-path: circle(304px at right 684px);
+  }
+  .social {
+    top: 75%;
+    right: 15px;
+  }
+  .thumb li img {
+    max-width: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 20px;
+    z-index: 10;
+  }
+  header .logo {
+    max-width: 60px;
+  }
+  header ul {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 1rem 1.8rem;
+    box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+  }
+  header ul .close {
+    margin-right: auto;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header ul li {
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  header ul li a {
+    margin-left: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  header .toggle {
+    font-size: 3.2rem;
+    color: #333;
+  }
+  header .toggle i {
+    cursor: pointer;
+  }
+  section {
+    padding: 0;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content .textBox {
+    max-width: 520px;
+    margin-top: 9rem;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+  .content .textBox h2 {
+    font-size: 3.5rem;
+  }
+  .content .textBox p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .imgBox img {
+    position: relative;
+    left: 70px;
+    bottom: 20px;
+    max-width: 320px;
+  }
+  .circle {
+    clip-path: circle(420px at right 1040px);
+  }
+  .social {
+    padding: 2px;
+    background: #017143;
+    border-radius: 5px;
+  }
+  .thumb {
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .close,
+  .toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .textBox {
+    margin-right: 105px;
+  }
+  .textBox h2 {
+    font-size: 3rem;
+  }
+  .imgBox img {
+    max-width: 250px;
+    margin-top: 50px;
+    margin-right: -50px;
+  }
+  .circle {
+    clip-path: circle(386px at right 680px);
+  }
+  .social {
+    top: 70%;
+  }
+}

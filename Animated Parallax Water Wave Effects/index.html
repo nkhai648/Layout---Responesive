@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Scroll xuống đi !</h1>
+        <div class="wave" id="wave1" style="--i:1;"></div>
+        <div class="wave" id="wave2" style="--i:2;"></div>
+        <div class="wave" id="wave3" style="--i:3;"></div>
+        <div class="wave" id="wave4" style="--i:4;"></div>
+    </section>
+    <div class="main">
+        <h2>Animated Parallax Water Wave Effects </h2>
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elitexplicabo reiciendis eum, sed,Lorem ipsum dolor . Nemo, cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit iure maiores delectus illum magni mollitia quae unde eum quaerat porro similique, dolore, repellendus, ducimus atque quam deleniti. Quod, doloribus? <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum quidem deserunt culpa deleniti. Quisquam neque officia atque fuga repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reprehenderit odit repellat consequuntur omnis delectus iusto perferendis, rerum aperiam ipsa id aliquid asperiores nisi quas praesentium nam beatae voluptatibus rem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque sunt tempore sed cupiditate est, fuga cum ducimus eligendi eveniet accusamus velit necessitatibus accusantium, magnam neque commodi natus quas veniam dicta doloremque nam nesciunt ipsum nisi. Unde veniam quasi perspiciatis qui eaque at facere minus repellat rem tempore, similique fugiat, quis pariatur corporis quisquam dolor eum modi ea omnis esse maxime dolores sequi! Voluptas quos debitis, recusandae ea incidunt error animi nemo consequatur ipsum, odio vitae officiis! Rem voluptate minima, similique tempora itaque ratione quia quisquam nulla quae animi enim, at, expedita iste illo porro asperiores? Nisi inventore cum perspiciatis quia.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ab qui fuga, ipsum tenetur maiores tempore nemo fugiat quas, eligendi, explicabo ipsa saepe velit! Molestiae eveniet sequi minima vero libero. Quisquam repellendus aliquam, provident officia, reprehenderit unde alias ex expedita itaque et odit voluptate laborum facilis voluptas praesentium iure, exercitationem id debitis ipsam. Voluptates optio porro accusamus! Tenetur nemo minus, exercitationem soluta quisquam quam qui nostrum porro. Nihil cumque repellendus mollitia libero minus ut sunt illo debitis delectus repudiandae nemo ullam dolore aspernatur placeat, sit est reiciendis beatae, inventore optio id! Sunt quaerat tenetur cum, et numquam nesciunt repellat rerum.</span>
+    </div>
+    <script>
+        let wave1 = document.getElementById('wave1')
+        let wave2 = document.getElementById('wave2')
+        let wave3 = document.getElementById('wave3')
+        let wave4 = document.getElementById('wave4')
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            
+            wave1.style.backgroundPositionX = 410 + value + 4 + 'px'
+            wave2.style.backgroundPositionX = 280 + value + -4 + 'px'
+            wave3.style.backgroundPositionX = 250 + value + 2 + 'px'
+            wave4.style.backgroundPositionX = 100 + value + -2 + 'px'
+
+        })
+    </script>
+</body>
+</html>

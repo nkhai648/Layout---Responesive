@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background: url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow:hidden;
+}
+.header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo a img {
+    width: 160px;
+    margin-right: 90px;
+}
+.header-menu {
+    margin-right: auto;
+}
+.header-menu .menu-list {
+    display: flex;
+}
+.menu-item {
+    margin-right: 30px;
+    font-size: 20px;
+}
+.header-cart a img {
+    width: 50px;
+}
+.social-list {
+    display: flex;
+    position: absolute;
+    bottom: 170px;
+    left: -3%;
+    transform: rotate(-90deg);
+}
+.social-item {
+    margin-right: 30px;
+    letter-spacing: 1px;
+}
+.social-link{
+    color: #333;
+}
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+.text {
+    padding-top: 100px;
+    padding-left:150px;
+}
+.text .text-coll {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: linear-gradient(45deg, #87aefe, #ff77cd);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    font-size: 17px;
+    box-shadow: 3px 8px 22px rgba(94,26,68,0.15);
+    cursor: pointer;
+}
+.text h2 {
+    font-size: 60px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.btn {
+    margin-top: 50px;
+}
+.btn a .back {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.btn a .next{
+    width: 40px;
+    cursor: pointer;
+
+}
+.section-img img {
+    width: 650px;
+}

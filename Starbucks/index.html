@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="img/png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img src="assets/img/logo.png" class="logo" alt="">
+            </a>
+            
+            <ul class= "menu" id="nav">
+                <div>
+                    <a href="#" class="close" id="close">
+                        <i class='bx bx-x'></i>
+                    </a>
+                </div>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">What's New</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <a href="#" class="toggle" id="toggle">
+                <i class='bx bx-menu'></i>
+            </a>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br> It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate eum aliquid placeat ducimus saepe? Ducimus quasi similique nemo, repudiandae ea exercitationem. Explicabo quaerat aut impedit voluptas est nisi illum? Nostrum alias magni excepturi vero!</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="assets/img/img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+
+        <div class="thumb">
+            <ul>
+                <li>
+                    <img src="assets/img/thumb1.png"onclick="imgSlider('assets/img/img1.png'); changeColor('#017143')">
+                </li>
+                <li>
+                    <img src="assets/img/thumb2.png" onclick="imgSlider('assets/img/img2.png'); changeColor('#eb7495')">
+                </li>
+                <li>
+                    <img src="assets/img/thumb3.png" onclick="imgSlider('assets/img/img3.png'); changeColor('#d752b1')">
+                </li>
+            </ul>
+        </div>
+        
+        <ul class="social">
+            <li>
+                <a href="#">
+                    <img src="assets/img/facebook.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/img/twitter.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="assets/img/instagram.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
