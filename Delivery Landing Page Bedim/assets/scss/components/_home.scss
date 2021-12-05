@@ -1,0 +1,13 @@
+.home {
+    &__container {
+        row-gap: 3rem;
+    }
+    &__title {
+        margin-bottom: var(--mb-0-75);
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-bold);
+    }
+    &__description {
+        margin-bottom: var(--mb-2);
+    }
+}

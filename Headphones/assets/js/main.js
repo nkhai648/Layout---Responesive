@@ -15,6 +15,7 @@ if(navClose) {
     })
 }
 /*=============== REMOVE MENU MOBILE ===============*/
+// Click link in menu will hide menu mobile
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {

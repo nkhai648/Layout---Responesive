@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    /* overflow: hidden; */
+}
+.container {
+    background: linear-gradient(120deg, #fff 61%, #3b5998 61%, #3b5998 100%);
+    position: relative;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 100px;
+}
+.logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+ul li {
+    margin:0 10px;
+    font-weight: 500;
+}
+ul li a:hover {
+    color: #3b5998;
+}
+ul li a {
+    color: #333;
+}
+.active {
+    color: #3b5998;
+}
+
+.down {
+    position: absolute;
+    right: 100px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: rgb(26, 26, 26);
+}
+.down i {
+    margin-right: 5px;
+}
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.text__content {
+    max-width: 600px;
+    padding-right: 10px;
+}
+h2 {
+    color: #3b5998;
+    font-weight: 700;
+    font-size: 70px;
+}
+p {
+    line-height: 1.3;
+    font-size: 17px;
+    color: rgba(0,0,0,0.8);
+}
+.down__app {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(59,89,152,1);
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.down__app i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+.img__content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
+}
+.img__content img{
+    width: 200px;
+    transition: .2 linear;
+    display: none;
+}
+.img__content img.active {
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dot {
+    width: 7px;
+    height: 20px;
+    background-color: rgba(255,255,255,0.4);
+    margin: 10px 0;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #fff;
+}
+
+.social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.social a{
+    color: #455f99;
+    margin-right: 10px;
+    font-size: 25px;
+    transition: .2s linear;
+}
+.social a:hover {
+    color: #0e41ad;
+}
+
+@media screen and (max-width: 900px){
+    .container {
+        padding: 0 50px;
+    }
+    header {
+        padding: 15px 50px;
+    }
+    ul li {
+        font-size: 16px;
+    }
+    .down {
+        font-size: 14px;
+        right: 50px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    p {
+        line-height: 1.4;
+        font-size: 14px;
+    }
+    .img__content img {
+        width: 180px;
+    }
+    .text__content {
+        padding-right: 30px;
+    }
+    .down__app {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+@media screen and (max-width: 656px) {
+    .container {
+        background : #fff;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .down {
+        display: none;
+    }
+    .content {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        padding-bottom: 60px;
+    }
+    .img__content {
+        padding:0;
+    }
+    .text__content{
+        text-align: center;
+        margin-top: 30px;
+        padding:0;
+    }
+    .social {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .dots {
+        display: inline-flex;
+        justify-content: center;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -58%);
+    }
+    .dot {
+        background-color: #465f94;
+        height: 8px;
+        width: 20px;
+        margin: 0 5px;
+    }
+    .dot.active {
+        background-color: #0e41ad;
+    }
+    .logo img {
+        max-width: 35px;
+    }
+}
